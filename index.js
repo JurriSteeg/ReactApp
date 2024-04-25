@@ -10,8 +10,7 @@ import './style.css';
 
 
 function Main() {
-  return (
-    <div id='main'>    
+  return (   
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -21,8 +20,7 @@ function Main() {
           <Route path="Episodes" element={<Episodes />} />
         </Route>
       </Routes>
-    </BrowserRouter>
-    </div> 
+    </BrowserRouter> 
     );
 }
 

@@ -4,10 +4,6 @@ body {
   padding: 0px;
 }
 
-nav {
-  background-color: #48AAAD;
-}
-
 #container {
 	background-color: #ECECEC;
 	height: 100%;
@@ -37,5 +33,25 @@ nav {
 }
 
 #navigation {
-	background-color: red;
+	padding: 0px;
+	margin: 0px;
+	height: 50px;
+	width: 100%;
+	float: left;
+}
+
+.button {
+	float: left;
+	width: 25%;
+	height: 50px;
+	padding-top: 13px;
+	text-align: center;
+	list-style-type: none;
+	font-family: verdana;
+  color: #ECECEC;
+  background-color: #48AAAD;
+}
+
+.button:hover{
+  background-color: #59788E;
 }

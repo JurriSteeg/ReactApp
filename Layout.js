@@ -2,26 +2,20 @@ import { Outlet, Link } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div id="navigation">
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/Characters">Characters</Link>
-          </li>
-          <li>
-            <Link to="/Locations">Locations</Link>
-          </li>
-          <li>
-            <Link to="/Episodes">Episodes</Link>
-          </li>
-        </ul>
-      </nav>
+    <>
+      <div id="navigation">
+        <nav> 
+          <Link to="/"><div class="button">Home</div></Link>
+          <Link to="/Characters"><div class="button">Characters</div></Link>
+          <Link to="/Locations"><div class="button">Locations</div></Link>
+          <Link to="/Episodes"><div class="button">Episodes</div></Link>
+        </nav>
+      </div>
 
-      <Outlet />
-    </div>
+      <div id="main">
+        <Outlet />
+      </div>
+    </>
   )
 };
 
