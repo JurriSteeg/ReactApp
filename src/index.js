@@ -1,12 +1,14 @@
 import React, {useState, createContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ReactSwitch from 'react-switch';
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Characters from "./pages/Characters";
 import Locations from "./pages/Locations";
 import Episodes from "./pages/Episodes";
 import './style.css';
+
 
 function Header() {
   return (
@@ -18,7 +20,7 @@ function Header() {
 }
 
 function Main() {
-  return (   
+  return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -44,6 +46,10 @@ function Container() {
   return (
       <div class='container' id={theme}>
         <Header />
+        <div class="switch">
+          <h3>Toggle Darkmode</h3>
+          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+        </div>
         <Main />
       </div>
   );

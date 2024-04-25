@@ -47,13 +47,14 @@ p {
 #light .header {
 	background-color: #016064;
 }
+
 #dark .header {
 		background-color: #022D36;
 }
 
 .main {
 	float: left;
-  height: 100%;
+	height: 100%;
   width: 100%;
   margin-top: 16px;
   overflow-y: auto;
@@ -81,6 +82,7 @@ p {
 #light .button {
 	background-color: #48AAAD;
 }
+
 #dark .button {
 		background-color: #016064;
 }
@@ -88,6 +90,7 @@ p {
 #light .button:hover{
   background-color: #59788E;
 }
+
 #dark .button:hover{
   background-color: #59788E;
 }
@@ -112,6 +115,7 @@ p {
 #light .locations {
 	background-color: lightgrey;
 }
+
 #dark .locations {
 	background-color: darkgrey;
 }
@@ -129,10 +133,18 @@ p {
 #light .episodes {
 	background-color: lightgrey;
 }
+
 #dark .episodes {
 	background-color: darkgrey;
 }
 
-.homepage {
+#homepage {
 	text-align: center;
+}
+
+.switch {
+	margin: 5%;
+  position: absolute;
+  font-family: verdana;
+  color: #ECECEC;
 }
