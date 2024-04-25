@@ -1,0 +1,41 @@
+body {
+  background-color: #282c34;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  background-color: #48AAAD;
+}
+
+#container {
+	background-color: #ECECEC;
+	height: 100%;
+	width: 1200px;
+	margin-left: calc((100% - 1200px) / 2);
+	position: fixed;
+	float: left;
+}
+
+#header{
+	background-color: #016064;
+	height: 180px;
+	width: 100%;
+	float: left;
+	font-family: verdana;
+	text-align: center;
+	padding-top: 40px;
+  color: #ECECEC;
+}
+
+#main {
+	background-color: #ECECEC;
+	float: left;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#navigation {
+	background-color: red;
+}
