@@ -82,3 +82,14 @@ p {
 	padding: 4%;
 	text-align: left;
 }
+
+.episodes {
+	background-color: lightgrey;
+	border-radius: 25px;
+	width: 30%;
+	float: left;
+	margin-top: 5%;
+	margin-left: 8%;
+	padding: 4%;
+	text-align: left;
+}

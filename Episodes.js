@@ -18,15 +18,13 @@ function Episodes() {
 
   return (
     <div class="results">
-      <ul>
         {data.results.map(item => (
-          <li key={item.id}>
-            {item.episode}
-            {item.name}
-            {item.air_date}
-          </li>
+          <div key={item.id} class="episodes">
+            <p><b>Episode: </b>{item.episode}</p>
+            <p><b>Name: </b>{item.name}</p>
+            <p><b>Air Date: </b>{item.air_date}</p>
+          </div>
         ))}
-      </ul>
     </div>
   );
 }
