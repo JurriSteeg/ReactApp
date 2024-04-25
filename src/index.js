@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Page2 from "./pages/Page2";
-import './App.css';
+import Characters from "./pages/Characters";
+import './style.css';
+
 
 function Menu() {
   return (
@@ -13,7 +14,7 @@ function Menu() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="Page2" element={<Page2 />} />
+          <Route path="Characters" element={<Characters />} />
         </Route>
       </Routes>
     </BrowserRouter>
@@ -23,13 +24,8 @@ function Menu() {
 
 function Bar() {
   return (
-  <div id='bar'></div>
-  );
-}
-
-function Main() {
-  return (
-  <div id='main'></div>
+  <div id='bar'>
+  </div>
   );
 }
 
@@ -38,7 +34,6 @@ function Container() {
     <div id='container'>
       <Bar />
       <Menu />
-      <Main />
     </div>
   );
 }

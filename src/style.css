@@ -1,0 +1,35 @@
+body {
+  background-color: #282c34;
+  margin: 0px;
+  padding: 0px;
+}
+
+#container {
+	background-color: white;
+	height: 100%;
+	width: 1200px;
+	margin-left: calc((100% - 1200px) / 2);
+	position: fixed;
+	float: left;
+}
+
+#bar{
+	background-color: #016064;
+	height: 20%;
+	width: 100%;
+	float: left;
+}
+
+#menu {
+	background-color: #48AAAD;
+	float: left;
+    height: 50px;
+    width: 100%;
+}
+
+#main {
+	background-color: #ECECEC;
+	float: left;
+    height: 100%;
+    width: 80%;
+}
