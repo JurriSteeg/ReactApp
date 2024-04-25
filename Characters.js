@@ -18,14 +18,12 @@ function Characters() {
 
   return (
     <div class="results">
-      <ul>
         {data.results.map(item => (
-          <li key={item.id}>
+          <div key={item.id} class="characters">
             <img alt={item.name} src={item.image} />
-            {item.name}
-          </li>
+            <br/><br/><b>{item.name}</b>
+          </div>
         ))}
-      </ul>
     </div>
   );
 }

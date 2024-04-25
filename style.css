@@ -4,6 +4,11 @@ body {
   padding: 0px;
 }
 
+p {
+	padding: 0px;
+	margin: 0px;
+}
+
 #container {
 	background-color: #ECECEC;
 	height: 100%;
@@ -54,4 +59,26 @@ body {
 
 .button:hover{
   background-color: #59788E;
+}
+
+.results{
+	font-family: verdana;
+}
+
+.characters {
+	width: 33%;
+	float: left;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.locations {
+	background-color: lightgrey;
+	border-radius: 25px;
+	width: 30%;
+	float: left;
+	margin-top: 5%;
+	margin-left: 8%;
+	padding: 4%;
+	text-align: left;
 }

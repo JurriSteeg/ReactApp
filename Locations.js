@@ -18,15 +18,13 @@ function Locations() {
 
   return (
     <div class="results">
-      <ul>
         {data.results.map(item => (
-          <li key={item.id}>
-            {item.name}
-            {item.type}
-            {item.dimension}
-          </li>
+          <div key={item.id} class="locations">
+            <p><b>Name:</b> {item.name}</p>
+            <p><b>Type:</b> {item.type}</p>
+            <p><b>Dimension:</b> {item.dimension}</p>
+          </div>
         ))}
-      </ul>
     </div>
   );
 }
