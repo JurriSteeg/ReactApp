@@ -1,5 +1,5 @@
 body {
-  background-color: #282c34;
+	background-color: #282c34;
   margin: 0px;
   padding: 0px;
 }
@@ -7,10 +7,18 @@ body {
 p {
 	padding: 0px;
 	margin: 0px;
+	font-family: verdana;
 }
 
-#container {
-	background-color: #ECECEC;
+#light p{
+	color: black;
+}
+
+#dark p{
+	color: white;
+}
+
+.container {
 	height: 100%;
 	width: 1200px;
 	margin-left: calc((100% - 1200px) / 2);
@@ -18,51 +26,70 @@ p {
 	float: left;
 }
 
-#header{
-	background-color: #016064;
+#light {
+	background-color: #ECECEC;
+}
+
+#dark {
+	background-color: #3A3B3C;
+}
+
+.header{
 	height: 180px;
 	width: 100%;
 	float: left;
-	font-family: verdana;
 	text-align: center;
 	padding-top: 40px;
+	font-family: verdana;
   color: #ECECEC;
 }
 
-#main {
-	background-color: #ECECEC;
+#light .header {
+	background-color: #016064;
+}
+#dark .header {
+		background-color: #022D36;
+}
+
+.main {
 	float: left;
   height: 100%;
   width: 100%;
+  margin-top: 16px;
   overflow-y: auto;
 }
 
-#navigation {
+.navigation {
 	padding: 0px;
 	margin: 0px;
 	height: 50px;
 	width: 100%;
 	float: left;
+	font-family: verdana;
 }
 
 .button {
 	float: left;
 	width: 25%;
 	height: 50px;
-	padding-top: 13px;
+	padding-top: 16px;
 	text-align: center;
 	list-style-type: none;
-	font-family: verdana;
   color: #ECECEC;
-  background-color: #48AAAD;
 }
 
-.button:hover{
+#light .button {
+	background-color: #48AAAD;
+}
+#dark .button {
+		background-color: #016064;
+}
+
+#light .button:hover{
   background-color: #59788E;
 }
-
-.results{
-	font-family: verdana;
+#dark .button:hover{
+  background-color: #59788E;
 }
 
 .characters {
@@ -73,7 +100,6 @@ p {
 }
 
 .locations {
-	background-color: lightgrey;
 	border-radius: 25px;
 	width: 30%;
 	float: left;
@@ -83,8 +109,14 @@ p {
 	text-align: left;
 }
 
-.episodes {
+#light .locations {
 	background-color: lightgrey;
+}
+#dark .locations {
+	background-color: darkgrey;
+}
+
+.episodes {
 	border-radius: 25px;
 	width: 30%;
 	float: left;
@@ -92,4 +124,15 @@ p {
 	margin-left: 8%;
 	padding: 4%;
 	text-align: left;
+}
+
+#light .episodes {
+	background-color: lightgrey;
+}
+#dark .episodes {
+	background-color: darkgrey;
+}
+
+.homepage {
+	text-align: center;
 }

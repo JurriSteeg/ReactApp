@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
+
 function Characters() {
   const [data, setData] = useState({ results: []});
   
@@ -21,7 +22,7 @@ function Characters() {
         {data.results.map(item => (
           <div key={item.id} class="characters">
             <img alt={item.name} src={item.image} />
-            <br/><br/><b>{item.name}</b>
+            <br/><br/><p><b>{item.name}</b></p>
           </div>
         ))}
     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, createContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
@@ -8,6 +8,14 @@ import Locations from "./pages/Locations";
 import Episodes from "./pages/Episodes";
 import './style.css';
 
+function Header() {
+  return (
+  <div class='header'>
+    <h1>Rick and Morty</h1>
+    <h2>Catalogus</h2>
+  </div>
+  );
+}
 
 function Main() {
   return (   
@@ -24,21 +32,20 @@ function Main() {
     );
 }
 
-function Header() {
-  return (
-  <div id='header'>
-    <h1>Rick and Morty</h1>
-    <h2>Catalogus</h2>
-  </div>
-  );
-}
+export const ThemeContext = createContext(null);
 
 function Container() {
+  const [theme, setTheme] = useState('light')
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === 'light' ? 'dark': 'light'))
+  }
+
   return (
-    <div id='container'>
-      <Header />
-      <Main />
-    </div>
+      <div class='container' id={theme}>
+        <Header />
+        <Main />
+      </div>
   );
 }
 
